@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/clr_Background"
+    android:id="@+id/llColor">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ivLimb"
+            android:contentDescription="@string/ImageDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvPreload"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20sp"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCaption" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResult"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="3dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_btnStart"
+            android:id="@+id/btnStart"
+            android:layout_weight="1"
+            android:background="@color/button_material_light"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_btnRepeat"
+            android:id="@+id/btnRepeat"
+            android:layout_weight="1"
+            android:background="@color/button_material_light"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>
